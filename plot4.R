@@ -1,8 +1,8 @@
-pow<-read.table("D:\\MOOC\\Data Science Seiry on Coursera\\exploratory\\Project 1\\household_power_consumption.txt", header=T, sep=";",na.strings="?",col.names=c("Date","Time","Global_active_power", "Global_reactive_power","Voltage","Global_intensity","Sub_metering_1", "Sub_metering_2c", "Sub_metering_3"))
+pow<-read.table("household_power_consumption.txt", header=T, sep=";",na.strings="?",col.names=c("Date","Time","Global_active_power", "Global_reactive_power","Voltage","Global_intensity","Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 cond <- (pow$Date=="1/2/2007" | pow$Date=="2/2/2007" ) & !is.na(pow$Sub_metering_1) & !is.na(pow$Sub_metering_2) & !is.na(pow$Sub_metering_3) & !is.na(pow$Global_reactive_power) & !is.na(pow$Voltage) & !is.na( pow$Global_active_power)
 power<-pow[cond,]
 
-png("D:\\MOOC\\Data Science Seiry on Coursera\\exploratory\\Project 1\\plot4.png")
+png("plot4.png")
 par(mfrow=c(2,2))
 par(ps=10)
 

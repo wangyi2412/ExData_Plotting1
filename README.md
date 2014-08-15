@@ -1,3 +1,6 @@
+For peer reviewers:
+To run the scripts, please make sure to put the input data file [Electric power consumption] in your local directory, and alter the input and output path in the script accordingly.
+
 ## Introduction
 
 This assignment uses data from
